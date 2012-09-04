@@ -15,5 +15,5 @@ Basic Usage
     twitter_account = TwitterKotoba.new('twitter_user_name')
     twitter_account.word_list
 
-ヤータ！！
+ヤータ！！！
 
