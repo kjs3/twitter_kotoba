@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = "Twitter Kotoba gets a user's last 1000 tweets and prints the frequency of each word in descending order."
   s.authors     = ["Kenny Smith"]
   s.email       = 'kjsthree@gmail.com'
-  s.homepage    = 'http://github'
+  s.homepage    = 'https://github.com/kjs3/twitter_kotoba'
 
   s.add_runtime_dependency('typhoeus', "~> 0.4")
   s.add_runtime_dependency('oj', "~> 1.3")

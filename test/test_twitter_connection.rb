@@ -21,6 +21,8 @@ describe TwitterConnection do
   end
 
   describe "processing requests" do
-    it ""
+    it "" do
+    end
+  end
 
 end
