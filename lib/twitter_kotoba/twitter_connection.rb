@@ -16,6 +16,8 @@ class TwitterConnection
     requests = run_requests
     tweets = process_requests(requests)
 
+    # if any of the requests return anything but 200 try again
+
     return tweets.flatten
   end
 
@@ -29,7 +31,7 @@ class TwitterConnection
     twitter_hydra = Typhoeus::Hydra.new
 
     (0..4).each do |req|
-      requests[req] = Typhoeus::Request.new("http://twitter.com/statuses/user_timeline.json?screen_name=#{@user}&count=200&page=#{req+1}")
+      requests[req] = Typhoeus::Request.new("http://api.twitter.com/1/statuses/user_timeline.json?screen_name=#{@user}&count=200&page=#{req+1}")
       requests[req].timeout = 10000 # 10 seconds max
       twitter_hydra.queue requests[req]
     end
