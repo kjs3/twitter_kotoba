@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'twitter_kotoba'
-  s.version     = '0.1.2'
+  s.version     = '0.1.3'
   s.date        = '2012-09-04'
   s.summary     = "Shows word frequency of a user's last 1000 tweets."
   s.description = "Twitter Kotoba gets a user's last 1000 tweets and prints the frequency of each word in descending order."
