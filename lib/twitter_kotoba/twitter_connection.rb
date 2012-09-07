@@ -13,15 +13,13 @@ class TwitterConnection
 
   def get_latest_1000
     
-    requests = run_requests
+    requests = make_requests
     tweets = process_requests(requests)
-
-    # if any of the requests return anything but 200 try again
 
     return tweets.flatten
   end
 
-  def run_requests
+  def make_requests
     # You can only request 200 tweets per page
     # so we need to get 5 pages for a total of 1000 tweets.
     requests = []
